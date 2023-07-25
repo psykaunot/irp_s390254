@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bigger_ladder">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.30148 -5.7714E-06 0.87869"
+        rpy="0 0 0" />
+      <mass
+        value="13.223" />
+      <inertia
+        ixx="0.91289"
+        ixy="7.3651E-08"
+        ixz="-0.10077"
+        iyy="1.2042"
+        iyz="1.4459E-07"
+        izz="0.51497" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0.94" />
+      <geometry>
+        <mesh
+          filename="package://hangar_model/obstacles/bigger_ladder/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hangar_model/obstacles/bigger_ladder/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

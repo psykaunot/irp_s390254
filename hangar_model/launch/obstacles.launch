@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<launch>
+
+ <!-- Baggage Trolley --> 
+ <node
+    name="spawn_object"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/baggage_trolley/urdf/baggage_trolley.urdf -urdf -model baggage_trolley -x 16.85 -y 29.79 -z 0"
+    output="screen" />
+    
+   <!-- Bigger Ladder -->   
+ <node
+    name="spawn_object_2"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/bigger_ladder/urdf/bigger_ladder.urdf -urdf -model bigger_ladder -x 10.40 -y 16.16 -z 0"
+    output="screen" />
+   <!-- Cantilever Ladder -->     
+    <node
+    name="spawn_object_3"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cantilever_ladder/urdf/cantilever_ladder.urdf -urdf -model cantilever_ladder -x 27.12 -y 24.90 -z 0"
+    output="screen" />
+        
+<!-- Forklift -->  
+    <node
+    name="spawn_object_4"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/forklift/urdf/forklift.urdf -urdf -model forklift -x 27 -y 35.35 -z 0"
+    output="screen" />
+    
+        
+<!-- Tool Cart -->  
+    <node
+    name="spawn_object_5"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/tool_cart/urdf/tool_cart.urdf -urdf -model tool_cart -x 25.76 -y 21.83 -z 0"
+    output="screen"/>
+    
+<!-- Cone 1-->  
+    <node
+    name="spawn_object_6"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_1 -x 10.13 -y 14 -z 0"
+    output="screen" />
+    
+ <!-- Cone 2-->  
+    <node
+    name="spawn_object_7"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_2 -x 7.44 -y 15.52 -z 0"
+    output="screen" />
+    
+ <!-- Cone 3-->  
+    <node
+    name="spawn_object_8"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_3 -x 9.17 -y 18.57 -z 0"
+    output="screen" />
+    
+<!-- Cone 4-->  
+    <node
+    name="spawn_object_9"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_4 -x 26.90 -y 27.87 -z 0"
+    output="screen" />
+    
+<!-- Cone 5-->  
+    <node
+    name="spawn_object_10"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_5 -x 30.71 -y 24.81 -z 0"
+    output="screen" />
+    
+ <!-- Cone 6-->  
+    <node
+    name="spawn_object_11"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_6 -x 28.62 -y 22.07 -z 0"
+    output="screen" />
+    
+    
+<!-- Cone 7-->  
+    <node
+    name="spawn_object_12"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_7 -x 26.68 -y 20.13 -z 0"
+    output="screen" />
+    
+<!-- Cone 8-->  
+    <node
+    name="spawn_object_13"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find hangar_model)/obstacles/cone/urdf/cone.urdf -urdf -model cone_8 -x 22.96 -y 22.11 -z 0"
+    output="screen" />
+
+</launch>
+

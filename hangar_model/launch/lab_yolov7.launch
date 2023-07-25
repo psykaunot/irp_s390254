@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<launch>
+   
+ 
+<!-- yolov7-ros -->
+     
+ <node pkg="yolov7_ros" type="detect_ros.py" name="detect" output="screen"
+    ns="yolov7">
+    
+    <param name="weights_path" type="str"
+        value="$(find yolov7_ros)/weights/yolov7-e6e.pt"/>     
+    <param name="classes_path" type="str" value="$(find yolov7_ros)/class_labels/coco80.txt"/>
+    <!-- topic name to subscribe to -->
+    <param name="img_topic" type="str" value="/camera/image" />
+    <!-- topic name for the detection output -->
+    <param name="out_topic" type="str" value="yolov7" />
+    <!-- confidence threshold -->
+    <param name="conf_thresh" type="double" value="0.50" />
+    <!-- intersection over union threshold -->
+    <param name="iou_thresh" type="double" value="0.45" />
+    <!-- queue size for publishing -->
+    <param name="queue_size" type="int" value="100" />
+    <!-- image size to which to resize each input image before feeding into the network (the final output is rescaled to the original image size) -->
+    <param name="img_size" type="int" value="640" />
+    <!-- flag whether to also publish image with the visualized detections -->
+    <param name="visualize" type="bool" value="true" />
+    <!-- 'cuda' or 'cpu' -->
+    <param name="device" type="str" value="cpu" />
+ </node>
+ 
+</launch>
+

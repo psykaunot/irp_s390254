@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+         <pose>0 0 10 0 0 0</pose> <!-- Adjust the position of the sun if needed -->
+      <light>
+        <cast_shadows>false</cast_shadows>
+        <diffuse>1.0 1.0 1.0 1.0</diffuse> <!-- Set the diffuse color of the sun -->
+        <specular>0.0 0.0 0.0 1.0</specular> <!-- Set the specular color of the sun -->
+        <attenuation>
+          <range>1000</range>
+          <constant>0.9</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+        </attenuation>
+        <direction>0 0 -1</direction> <!-- Set the direction of the sun -->
+      </light>
+
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+      <material>
+        <ambient>0.76 0.69 0.57 1</ambient> <!-- Beige color -->
+     </material>
+    </include>
+    
+     <scene>
+      <sky>
+        <clouds>false</clouds>
+      </sky>
+      <ambient>0.8 0.8 1.0 1.0</ambient> <!-- Blue color -->
+    </scene>
+  </world>
+</sdf>
+
